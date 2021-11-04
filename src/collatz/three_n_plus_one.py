@@ -28,7 +28,6 @@ class ThreeNPlusOne:
             )
 
         next_num = ThreeNPlusOne.next_num(num)
-        # print(f"{self}, \t{next_num = }")
 
         # main recursion logic
         if next_num not in self.intermediate_steps:

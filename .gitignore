@@ -5,3 +5,4 @@ venv
 collatz.egg-info
 .coverage
 htmlcov
+.tox
