@@ -49,9 +49,6 @@ class ThreeNPlusOne:
         else:
             return num >> 1
 
-    def __len__(self):
-        return len(self.intermediate_steps)
-
 # %%
 
 
@@ -78,12 +75,3 @@ def recursive_iter(
             return recursive_iter(n >> 1, steps + 1,
                                   res_str, intermediate_steps + (n,))
 
-
-# %%
-
-if __name__ == "__main__":
-    for i in range(201):
-        steps, stops = recursive_iter(i)
-        print(f"number {i} finished in {stops} stops")
-        if stops > 50:
-            print(steps)

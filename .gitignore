@@ -4,3 +4,4 @@ __pycache__
 venv
 collatz.egg-info
 .coverage
+htmlcov
