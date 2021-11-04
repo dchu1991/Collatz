@@ -1,6 +1,7 @@
 # %%
 from typing import Optional
 
+
 class ThreeNPlusOne:
     """associate 1 int with 1 instance and the intermediate steps leading
     to a loop.  all nums in the steps are considered as visited such that
@@ -74,4 +75,3 @@ def recursive_iter(
         else:
             return recursive_iter(n >> 1, steps + 1,
                                   res_str, intermediate_steps + (n,))
-
