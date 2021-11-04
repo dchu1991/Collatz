@@ -1,17 +1,14 @@
 # %%
-from typing import Optional, Type, TypeVar
-
-_T = TypeVar("_T", bound='ThreeNPlusOne')
-
+from typing import Optional
 
 class ThreeNPlusOne:
     """associate 1 int with 1 instance and the intermediate steps leading
     to a loop.  all nums in the steps are considered as visited such that
     we don't have to call the recursion again."""
 
-    _visited: dict[int, _T] = {}
+    _visited: dict[int, "ThreeNPlusOne"] = {}
 
-    def __new__(cls: Type[_T], num: int) -> _T:
+    def __new__(cls: type["ThreeNPlusOne"], num: int) -> "ThreeNPlusOne":
         """no more than 2 instances for a given num"""
         if (obj := cls._visited.get(num)) is not None:
             return obj
@@ -30,7 +27,7 @@ class ThreeNPlusOne:
             )
 
         next_num = ThreeNPlusOne.next_num(num)
-        print(f"{self}, \t{next_num = }")
+        # print(f"{self}, \t{next_num = }")
 
         # main recursion logic
         if next_num not in self.intermediate_steps:
