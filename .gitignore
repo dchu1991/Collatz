@@ -6,3 +6,4 @@ collatz.egg-info
 .coverage
 htmlcov
 .tox
+.vscode
