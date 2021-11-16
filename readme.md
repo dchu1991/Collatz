@@ -20,3 +20,4 @@ you can refer to the test file for details.
 the package also comes with another function, recursive_iter, to help compute the correct intermediate_steps.  however it doesn't make connection with previous called results so is less helpful in terms of reducing computation time... in my opinion.
 
 have fun.
+![Tests](https://github.com/dchu1991/Collatz/actions/workflows/test.yml/badge.svg)
