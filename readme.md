@@ -13,6 +13,7 @@ then call the ThreeNPlusOne class with int.
 each instance has a attribute, intermediate_steps, which is a tuple containing all hailstone numbers starting with the initialized int.
 
 however the code is flawed such that elements of a loop depends on the order you initialized it.  i recommend you first initialize ThreeNPlusOne(1) before initialize with other positive int instances such that the outcome of intermediate_steps is correct except ThreeNPlueOne(2).
+you can refer to the test file for details.
 
 //TODO: make this improvement.
 
